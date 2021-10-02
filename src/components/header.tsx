@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { colorDark, headerHeight, navigation } from '../assets/assets';
+import { colorDark, colorLight, headerHeight, navigation } from '../assets/assets';
 
 const Link = styled.a`
   text-decoration: none;
@@ -13,6 +13,7 @@ const HeaderTag = styled.header`
   align-items: center;
   justify-content: center;
   color: ${colorDark};
+  background-color: ${colorLight};
   z-index: 2;
 `;
 
