@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { colorLight, footerHeight, headerHeight } from '../assets/assets';
+import Intro from './content/Intro';
 
 export default function Content(){
   const Content = styled.div`
@@ -12,7 +13,7 @@ export default function Content(){
 
   return (
     <Content className="relative">
-      Test
+      <Intro></Intro>
     </Content>
   );
 }
