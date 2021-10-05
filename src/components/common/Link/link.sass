@@ -1,0 +1,26 @@
+@import './../../../styles/variables'
+
+.link
+  position: relative
+  color: $dark
+  text-decoration: none
+
+  &::after, &::before
+    transition: width .5s ease-out
+    content: ''
+    width: 50%
+    height: 2px
+    position: absolute
+    bottom: 0px
+    background-color: $dark
+
+  &::after
+    left: 50%
+
+  &::before
+    right: 50%
+  
+  &:hover
+    &::after, &::before
+      transition: width .5s ease-in
+      width: 0%

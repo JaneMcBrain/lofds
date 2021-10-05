@@ -27,11 +27,6 @@ export default function Intro(){
     align-items: flex-start;
   `;
 
-  const TitleCol = styled.span`
-    margin-bottom: 10px;
-    padding: 6px 15px;
-  `;
-
   const Text = styled.p`
     padding-right: 15vw;
     padding-left: 15vw;
@@ -44,7 +39,7 @@ export default function Intro(){
       <ImgDiv className="relative">
         <Image src={image}></Image>
         <Title className="absolute flex dir-column headline h1 text-light">
-          {intro.title.map(word => <HighlightText highlight="gradient-bg" text={word}></HighlightText>)}
+          {intro.title.map(word => <HighlightText key={word} highlight="gradient-bg" text={word}></HighlightText>)}
         </Title>
       </ImgDiv>
       <Text className="mb-50 text-light">{intro.text}</Text>

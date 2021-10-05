@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { colorLight, footerHeight, headerHeight } from '../assets/assets';
+import Elements from './content/Elements/Elements';
 import Intro from './content/Intro';
 
 export default function Content(){
@@ -14,6 +15,7 @@ export default function Content(){
   return (
     <Content className="relative">
       <Intro></Intro>
+      <Elements></Elements>
     </Content>
   );
 }

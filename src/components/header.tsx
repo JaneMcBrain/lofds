@@ -25,9 +25,9 @@ export default function Header(){
 
   return (
     <HeaderTag className="fixed top0 right0 left0">
-      {navigation.left.map( item => <Link href={'#' + item.anchor} left>{item.name}</Link>)}
+      {navigation.left.map( item => <Link key={item.name} href={'#' + item.anchor} left>{item.name}</Link>)}
       <Image src="https://static.wixstatic.com/media/d1bfd1_395f2a29389245deb2ad542d2fde779f~mv2.jpg/v1/fill/w_895,h_295,al_c,lg_1,q_80/Lofds%20Logog.webp"></Image>
-      {navigation.right.map( item => <Link href={'#' + item.anchor} right>{item.name}</Link>)}
+      {navigation.right.map( item => <Link key={item.name} href={'#' + item.anchor} right>{item.name}</Link>)}
     </HeaderTag>
   );
 }
