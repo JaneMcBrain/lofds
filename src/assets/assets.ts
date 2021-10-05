@@ -20,7 +20,7 @@ export const navigation = {
 }
 
 export const intro = {
-  title: 'Lustige Organisation für dolle Sachen',
-  text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+  title: ['Lustige', 'Organisation', 'für dolle Sachen'],
+  text: 'LOFDS vereint Organisation, Kreativität und Schönheit. Es ist ein Team in dem innovative Ideen wachsen können. Unsere Business Center unterstützen sich gegenseitig, Expertise wird geteilt und dem Schaffensgeist sind somit keine Grenzen gesetzt. Ob Eventplanung, Design, Mode oder Musik LOFDS zeichnet sich durch seine Vielfältigkeit aus und wird dadurch einzigartig. Obwohl Ideen meist klein beginnen, kann durch den Zusammenschluss unserer Business Center bereits der Funke zu etwas Großem werden. Spaß, Kreativität und Begeisterung zeichnen unsere Arbeit aus, eben eine lustige Organisation für dolle Sachen.',
   button: 'Schreib uns'
 } 

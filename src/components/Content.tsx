@@ -8,7 +8,7 @@ export default function Content(){
     min-height: 800px;
     z-index: 1;
     padding-top: ${headerHeight};
-    margin-bottom: ${footerHeight}
+    margin-bottom: ${footerHeight};
   `;
 
   return (
