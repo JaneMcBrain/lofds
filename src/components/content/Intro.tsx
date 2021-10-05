@@ -23,7 +23,7 @@ export default function Intro(){
   return (
     <Container>
       <Image src={image}></Image>
-      <Text>{intro.text}</Text>
+      <Button text={intro.button}></Button>
     </Container>
   );
 }
