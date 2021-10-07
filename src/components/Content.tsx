@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colorLight, footerHeight, headerHeight } from '../assets/assets';
+import { colorLight, footerHeight, headerHeight, headerMobileHeight, phone, tablet } from '../assets/assets';
 import Elements from './content/Elements/Elements';
 import Intro from './content/Intro';
 import Partners from './content/Partners/Partners';
@@ -12,6 +12,14 @@ export default function Content(){
     z-index: 1;
     padding-top: ${headerHeight};
     margin-bottom: ${footerHeight};
+    overflow: hidden;
+
+    @media only screen and (max-width: ${tablet}){
+      padding-top: ${headerMobileHeight};
+    }
+    @media only screen and (max-width: ${phone}){
+      margin-bottom: 527px;
+    }
   `;
 
   return (

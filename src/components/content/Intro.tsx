@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { intro } from '../../assets/assets';
+import { intro, phone } from '../../assets/assets';
 import image from '../../assets/images/intro-comic.jpg'
 import Button from '../common/Button/Button';
 import HighlightText from '../common/HighlightText/HighlightText';
@@ -10,15 +10,28 @@ export default function Intro(){
   const Container = styled.div`
     padding-top: 100px;
     padding-bottom: 60px;
+
+    @media only screen and (max-width: ${phone}){
+      padding: 50px 30px;
+    }
   `;
 
   const ImgDiv = styled.div`
     margin-left: -${imageWidth};
+
+    @media only screen and (max-width: ${phone}){
+      margin-left: 0;
+    }
   `;
 
   const Image = styled.img`
     width: ${imageWidth};
     margin-bottom: 100px;
+
+    @media only screen and (max-width: ${phone}){
+      width: 100%;
+      margin-bottom: 176px;
+    }
   `;
 
   const Title = styled.h1`
@@ -26,13 +39,24 @@ export default function Intro(){
     top: 50px;
     left: 35vw;
     align-items: flex-start;
+
+    @media only screen and (max-width: ${phone}){
+      bottom: 81px;
+      left: 12px;
+      top: inherit;
+    }
   `;
 
   const Text = styled.p`
     padding-right: 15vw;
     padding-left: 15vw;
     column-count: 2;
-    column-gap: 100px;
+    column-gap: 7vw;
+
+    @media only screen and (max-width: ${phone}){
+      column-count: 1;
+      padding: 0px;
+    }
   `;
 
   return (

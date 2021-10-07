@@ -9,8 +9,8 @@
     content: ''
     position: absolute
     top: 33%
-    width: 422px
-    height: 600px
+    width: 30vw
+    height: 50vw
     background-repeat: no-repeat
 
   &::after
@@ -25,7 +25,7 @@
 
   &__title
     margin-bottom: 118px
-    padding-left: 130px
+    padding-left: 9vw
     max-width: 800px
   
   &__content
@@ -43,3 +43,28 @@
   
   &__text
     max-width: 305px
+  
+  @media only screen and (max-width: $phone)
+    margin-bottom: 50px
+    padding-right: 30px
+    padding-left: 30px
+
+    &::before, &::after
+      top: 53%
+      width: 53vw
+      height: 83vw
+    
+    &::after
+      left: -78px
+
+    &__title
+      margin-bottom: 80px
+      padding-left: 0
+    
+    &__content
+      width: 100%
+      max-width: 100%
+    
+    &__img
+      width: 258px
+      margin: 215px auto 0

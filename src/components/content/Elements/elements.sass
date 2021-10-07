@@ -1,5 +1,7 @@
+@import './../../../styles/variables'
+
 .elements
-  padding: 150px 130px 0
+  padding: 150px 9vw 0
 
   &__item
     display: flex
@@ -29,3 +31,35 @@
   &__text
     margin-top: 30px
     margin-bottom: 40px
+  
+  @media only screen and (max-width: $phone)
+    padding: 80px 30px 0
+
+    &__item
+      margin-bottom: 80px
+      flex-direction: column
+
+      &--reverse
+        .elements__title
+          margin-right: 0
+          margin-left: 0
+          align-self: flex-start
+      
+        .elements__image
+          align-self: flex-end
+
+        .elements__description
+          padding-right: 0
+    
+    &__image
+      width: 260px
+    
+    &__description
+      margin-top: -23px
+      padding-left: 0
+  
+    &__title
+      top: inherit
+      margin-left: 0
+      right: 0
+      align-self: flex-end

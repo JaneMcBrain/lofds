@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { phone } from '../assets/assets';
 import Link from './common/Link/Link';
 
 export default function Footer(){
@@ -7,14 +8,23 @@ export default function Footer(){
   `;
   const FooterColumn = styled.div`
     width: 235px;
+
+    @media only screen and (max-width: ${phone}){
+      margin-bottom: 50px
+    }
   `;
 
   const FooterContent = styled.div`
     width: 100%;
-    padding-right: 130px;
-    padding-left: 130px;
+    padding-right: 9vw;
+    padding-left: 9vw;
     padding-bottom: 72px;
     justify-content: space-between;
+
+    @media only screen and (max-width: ${phone}){
+      flex-direction: column;
+      padding-bottom: 0;
+    }
   `;
 
   return (
