@@ -1,0 +1,45 @@
+@import './../../../styles/variables'
+
+.project
+  position: relative
+  overflow: hidden
+  margin-bottom: 150px
+
+  &::before, &::after
+    content: ''
+    position: absolute
+    top: 33%
+    width: 422px
+    height: 600px
+    background-repeat: no-repeat
+
+  &::after
+    left: -100px
+    background-image: url('/assets/images/plant3.svg')
+    transform: rotate(45deg) scaleX(-1)
+
+  &::before
+    right: -50px
+    background-image: url('/assets/images/plant1.svg')
+    transform: rotate(-45deg) scaleX(-1)
+
+  &__title
+    margin-bottom: 118px
+    padding-left: 130px
+    max-width: 800px
+  
+  &__content
+    max-width: 325px
+    align-self: center
+
+  &__img
+    margin-top: 45px
+    max-width: 300px
+    border-radius: 50%
+    border: 5px double $black
+
+  &__name, &__text
+    margin-bottom: 45px
+  
+  &__text
+    max-width: 305px

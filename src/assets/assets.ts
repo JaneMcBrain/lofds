@@ -33,3 +33,11 @@ export const elements = [
   {title: 'Aha-Design', text: 'Der Fokus liegt hier auf der Gestaltung. Sei es das Erscheinungsbild deiner Marke, das Design des Web Auftritts oder die Umsetzung kreativer Details wie Illustration oder Animationen. Jede Design Aufgabe wird begeistert umgesetzt.', linkText: "Hier geht's zu Aha-Design", linkAnchor: '', image: 'aha-design-element'},
   {title: 'Saxophon Retreat', text: 'Retreat, englisch für Rückzug, bezeichnet eine geplant spirituelle Ruhepause oder Rückzug von der gewohnten Umgebung… wir nutzen spirituelle Praktiken um den Irrglauben der „nicht Musikalität“ zu lösen.', linkText: 'Erfahre mehr über unsere Mission', linkAnchor: '', image: 'saxophonretreat-element'},
 ];
+
+export const project = {
+  title: ['Unsere gemeinsamen', 'Projekte'],
+  name: 'Sankas Spices',
+  description: 'Sankas Spices - hilf Familien aus Sri Lanka zu überleben indem du deine Gewürze local beziehst.',
+  linkText: 'Erfahre mehr über unsere Mission',
+  linkAnchor: 'http://sankas-spices.com/'
+}

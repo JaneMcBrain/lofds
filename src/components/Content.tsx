@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { colorLight, footerHeight, headerHeight } from '../assets/assets';
 import Elements from './content/Elements/Elements';
 import Intro from './content/Intro';
+import Project from './content/Project/Project';
 
 export default function Content(){
   const Content = styled.div`
@@ -16,6 +17,7 @@ export default function Content(){
     <Content className="relative">
       <Intro></Intro>
       <Elements></Elements>
+      <Project></Project>
     </Content>
   );
 }
