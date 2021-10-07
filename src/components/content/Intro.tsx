@@ -8,8 +8,8 @@ export default function Intro(){
   const imageWidth = '42vw';
 
   const Container = styled.div`
-    padding-top: 7vw;
-    padding-bottom: 4vw;
+    padding-top: 100px;
+    padding-bottom: 60px;
   `;
 
   const ImgDiv = styled.div`
@@ -18,12 +18,13 @@ export default function Intro(){
 
   const Image = styled.img`
     width: ${imageWidth};
-    margin-bottom: 7vw;
+    margin-bottom: 100px;
   `;
 
   const Title = styled.h1`
+    width: 510px;
     top: 50px;
-    right: -80%;
+    left: 35vw;
     align-items: flex-start;
   `;
 
@@ -31,7 +32,7 @@ export default function Intro(){
     padding-right: 15vw;
     padding-left: 15vw;
     column-count: 2;
-    column-gap: 7vw;
+    column-gap: 100px;
   `;
 
   return (
