@@ -4,7 +4,7 @@ import { colorDark, colorLight, headerHeight, navigation } from '../assets/asset
 
 const Link = styled.a`
   text-decoration: none;
-  ${props => (props.left ? 'margin-right' : 'margin-left')}: 10px;
+  ${props => (props.left ? 'margin-right' : 'margin-left')}: 3vw;
 `;
 
 const HeaderTag = styled.header`

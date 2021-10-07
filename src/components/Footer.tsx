@@ -1,14 +1,40 @@
 import styled from 'styled-components';
+import Link from './common/Link/Link';
 
 export default function Footer(){
   const Footer = styled.footer`
-    background-color: #7cd7b9;
     z-index: 0;
+  `;
+  const FooterColumn = styled.div`
+    width: 235px;
+  `;
+
+  const FooterContent = styled.div`
+    width: 100%;
+    padding-right: 130px;
+    padding-left: 130px;
+    padding-bottom: 72px;
+    justify-content: space-between;
   `;
 
   return (
-    <Footer className="fixed top0 right0 bottom0 left0">
-      <div className="absolute bottom0">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+    <Footer className="fixed top0 right0 bottom0 left0 gradient-bg-h">
+      <FooterContent className="absolute bottom0 flex">
+        <FooterColumn>
+          <h2 className="headline h2 mb-20">Du hast eine Idee?</h2>
+          <Link text="Erzähl uns davon" link="mailto:contact"></Link>
+        </FooterColumn>
+        <FooterColumn>
+          <h2 className="headline h2 mb-20">Folge uns</h2>
+          <Link text="Instagram" link="http://"></Link>
+        </FooterColumn>
+        <FooterColumn>
+          <h2 className="headline h2 mb-20">Kontakt</h2>
+          <p>L.O.F.D.S. UG & Co. KG</p>
+          <p>Josef-Orlopp-Strasse 92-106</p>
+          <p>10365 Berlin</p>
+        </FooterColumn>
+      </FooterContent>
     </Footer>
   );
 }
