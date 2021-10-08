@@ -11,18 +11,21 @@ import saxophonretreat from '../../../assets/images/saxophonretreat-element.jpg'
 
 export default function Elements(){
   const isEven = (index) => (index + 1) % 2 === 0;
-  const images = [tausendsassa, labelsitter, systemb, dinosound, ahadesign, saxophonretreat]
+  const images = [tausendsassa, labelsitter, systemb, dinosound, ahadesign, saxophonretreat];
+  const convertId = (text: string) => text.toLowerCase().replace(' ', '').replace('-', '');
+
   return (
-    <div className="elements flex dir-column mb-50">
+    <div className="elements flex dir-column">
       {elements.map((el, index) =>
-        <div key={el.title} className={isEven(index) ? 'elements__item elements__item--reverse' : 'elements__item'}>
+        <div key={el.title} id={convertId(el.title)} 
+          className={isEven(index) ? 'elements__item elements__item--reverse' : 'elements__item'}>
           <img src={images[index]} alt={el.title} className="elements__image"></img>
           <div className="elements__description flex dir-column align-start justify-center">
             <h2 className="elements__title headline h2 text-light">
               <HighlightText highlight='dark-bg' text={el.title}></HighlightText>
             </h2>
             <p className="elements__text">{el.text}</p>
-            <Link link={el.linkAnchor} text={el.linkText}></Link>
+            {el.linkAnchor.length > 0 && <Link link={el.linkAnchor} text={el.linkText}></Link>}
           </div>
         </div>
         )
