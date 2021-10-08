@@ -3,6 +3,7 @@ import { intro, phone } from '../../assets/assets';
 import image from '../../assets/images/intro-comic.jpg'
 import Button from '../common/Button/Button';
 import HighlightText from '../common/HighlightText/HighlightText';
+import inspiredImg from '../../assets/images/get-inspired-white.svg';
 
 export default function Intro(){
   const imageWidth = '42vw';
@@ -59,6 +60,12 @@ export default function Intro(){
     }
   `;
 
+  const Icon = styled.img`
+    position: absolute;
+    right: 130px;
+    top: 218px;
+  `;
+
   return (
     <Container className="flex dir-column align-center dark-bg">
       <ImgDiv className="relative">
@@ -68,7 +75,8 @@ export default function Intro(){
         </Title>
       </ImgDiv>
       <Text className="mb-50 text-light">{intro.text}</Text>
-      <Button text={intro.button}></Button>
+      <Button text={intro.button} link="mailto:"></Button>
+      <Icon src={inspiredImg} alt="Get inspired!"></Icon>
     </Container>
   );
 }

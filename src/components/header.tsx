@@ -9,7 +9,6 @@ export default function Header(){
   const mobileLinks = navigation.left.concat(navigation.right);
 
   const Link = styled.a`
-  text-decoration: none;
   ${props => (props.left ? 'margin-right' : 'margin-left')}: 3vw;
 
   @media only screen and (max-width: ${tablet}){
@@ -101,7 +100,6 @@ export default function Header(){
   `;
 
   const MobileLink = styled.a`
-    text-decoration: none;
     margin-bottom: 39px;
   `;
 

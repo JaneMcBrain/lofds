@@ -3,12 +3,12 @@
 .project
   position: relative
   overflow: hidden
-  margin-bottom: 100px
+  padding-bottom: 100px
 
   &::before, &::after
     content: ''
     position: absolute
-    top: 33%
+    top: calc(33% - 100px)
     width: 30vw
     height: 50vw
     background-repeat: no-repeat

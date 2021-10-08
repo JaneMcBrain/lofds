@@ -1,8 +1,11 @@
+@import './../../../styles/variables'
+
 .partners
   max-width: 100vw
   margin-right: auto
   margin-left: auto
   padding-bottom: 100px
+  justify-content: center
   overflow-y: scroll
   -ms-overflow-style: none
   scrollbar-width: none
@@ -14,3 +17,10 @@
     width: 250px
     padding-right: 20px
     padding-left: 20px
+  
+  @media only screen and (max-width: '1199px')
+    justify-content: flex-start
+
+  @media only screen and (max-width: $phone)
+    &__item
+      width: 170px
