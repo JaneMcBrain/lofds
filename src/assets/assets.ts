@@ -26,7 +26,7 @@ export const navigation = {
 export const intro = {
   title: ['Lustige', 'Organisation', 'für dolle Sachen'],
   text: 'LOFDS vereint Organisation, Kreativität und Schönheit. Es ist ein Team in dem innovative Ideen wachsen können. Unsere Business Center unterstützen sich gegenseitig, Expertise wird geteilt und dem Schaffensgeist sind somit keine Grenzen gesetzt. Ob Eventplanung, Design, Mode oder Musik LOFDS zeichnet sich durch seine Vielfältigkeit aus und wird dadurch einzigartig. Obwohl Ideen meist klein beginnen, kann durch den Zusammenschluss unserer Business Center bereits der Funke zu etwas Großem werden. Spaß, Kreativität und Begeisterung zeichnen unsere Arbeit aus, eben eine lustige Organisation für dolle Sachen.',
-  button: {text: 'Schreib uns', link: 'allin@lofds.de'}
+  button: {text: 'Schreib uns', link: 'mailto:allin@lofds.de'}
 };
 
 export const elements = [
