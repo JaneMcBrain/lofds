@@ -68,7 +68,7 @@ export default function Intro(){
         </Title>
       </ImgDiv>
       <Text className="mb-50 text-light">{intro.text}</Text>
-      <Button text={intro.button}></Button>
+      <Button text={intro.button.text}></Button>
     </Container>
   );
 }
