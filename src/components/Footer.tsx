@@ -32,7 +32,7 @@ export default function Footer(){
       <FooterContent className="absolute bottom0 flex">
         <FooterColumn>
           <h2 className="headline h2 mb-20">Du hast eine Idee?</h2>
-          <Link text="Erzähl uns davon" link="mailto:contact"></Link>
+          <Link text="Erzähl uns davon" link="mailto:allin@lofds.de"></Link>
         </FooterColumn>
         <FooterColumn>
           <h2 className="headline h2 mb-20">Folge uns</h2>

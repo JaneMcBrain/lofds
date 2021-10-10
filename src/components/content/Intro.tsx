@@ -75,7 +75,7 @@ export default function Intro(){
         </Title>
       </ImgDiv>
       <Text className="mb-50 text-light">{intro.text}</Text>
-      <Button text={intro.button} link="mailto:"></Button>
+      <Button text={intro.button.text} link={intro.button.link}></Button>
       <Icon src={inspiredImg} alt="Get inspired!"></Icon>
     </Container>
   );
