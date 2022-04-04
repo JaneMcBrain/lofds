@@ -18,7 +18,7 @@ export const navigation = {
   ],
   right: [
     {name: 'Label Sitter', anchor: 'labelsitter'},
-    {name: 'System B', anchor: 'systemb'},
+    {name: 'System.B', anchor: 'systemb'},
     {name: 'Saxophon Retrait', anchor: 'saxophonretreat'},
   ]
 };
@@ -30,9 +30,9 @@ export const intro = {
 };
 
 export const elements = [
-  {title: 'Tausendsassa', text: 'Umfasst die Studiotätigkeiten des Produzenten und Musikers Florin Kerber. In seinem selbstgebauten Tonstudio im Herzen Berlins produziert er vornehmlich handgemachte Musik.', linkText: 'Mehr über Tausendsassa', linkAnchor: 'https://www.tausendsassa-entertainment.de/', image: 'tausendsassa-element'},
+  {title: 'Tausendsassa', title_2: 'Entertainment', text: 'Umfasst die Studiotätigkeiten des Produzenten und Musikers Florin Kerber. In seinem selbstgebauten Tonstudio im Herzen Berlins produziert er vornehmlich handgemachte Musik.', linkText: 'Mehr über Tausendsassa Entertainment', linkAnchor: 'https://www.tausendsassa-entertainment.de/', image: 'tausendsassa-element'},
   {title: 'Labelsitter', text: 'im Süden Münchens präsentieren wir seit über 20 Jahren, jede Saison einzigartige Modelabels. Wir stehen für Nachhaltigkeit und Transparenz… und der festen Überzeugung, dass alle einen Beitrag leisten können.', linkText: "Hier geht's zu den Labels", linkAnchor: 'https://www.diekollektionen.de/', image: 'labelsitter-element'},
-  {title: 'System B', text: 'Hier dreht sich alles um Events und Gastronomie. Wir vermitteln dir kompetentes Personal für alle Gastronomiebereiche, organisieren dein Event und auf Wunsch bringen wir Struktur in deine Bar oder dein Lager.', linkText: 'Mehr über System B', linkAnchor: '', image: 'system-b-element'},
+  {title: 'System.B', text: 'Hier dreht sich alles um Events und Gastronomie. Wir vermitteln dir kompetentes Personal für alle Gastronomiebereiche, organisieren dein Event und auf Wunsch bringen wir Struktur in deine Bar oder dein Lager.', linkText: 'Mehr über System.B', linkAnchor: '', image: 'system-b-element'},
   {title: 'DinoSound', text: 'Ist eine Berliner Rockband mit eigenem Anspruch an große Songs. Gänzlich unbeeindruckt von Trends setzen die vier Freunde auf das, was sie lieben: handgemachte Rockmusik mit Hymnencharakter.', linkText: 'Mehr über DinoSound', linkAnchor: 'http://www.dinosound-music.com', image: 'dinosound-element'},
   {title: 'Aha-Design', text: 'Der Fokus liegt hier auf der Gestaltung. Sei es das Erscheinungsbild deiner Marke, das Design des Web Auftritts oder die Umsetzung kreativer Details wie Illustration oder Animationen. Jede Design Aufgabe wird begeistert umgesetzt.', linkText: "Hier geht's zu Aha-Design", linkAnchor: '', image: 'aha-design-element'},
   {title: 'Saxophon Retreat', text: 'Retreat, englisch für Rückzug, bezeichnet eine geplant spirituelle Ruhepause oder Rückzug von der gewohnten Umgebung… wir nutzen spirituelle Praktiken um den Irrglauben der „nicht Musikalität“ zu lösen.', linkText: 'Erfahre mehr über unsere Mission', linkAnchor: '', image: 'saxophonretreat-element'},

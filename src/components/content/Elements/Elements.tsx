@@ -21,8 +21,9 @@ export default function Elements(){
           className={isEven(index) ? 'elements__item elements__item--reverse' : 'elements__item'}>
           <img src={images[index]} alt={el.title} className="elements__image"></img>
           <div className="elements__description flex dir-column align-start justify-center">
-            <h2 className="elements__title headline h2 text-light">
+            <h2 className="elements__title headline h2 text-light flex dir-column flex-start">
               <HighlightText highlight='dark-bg' text={el.title}></HighlightText>
+              {el.title_2 && <HighlightText highlight='dark-bg' text={el.title_2}/>}
             </h2>
             <p className="elements__text">{el.text}</p>
             {el.linkAnchor.length > 0 && <Link link={el.linkAnchor} text={el.linkText}></Link>}

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { intro, phone } from '../../assets/assets';
+import { intro, phone, tablet } from '../../assets/assets';
 import image from '../../assets/images/intro-comic.jpg'
 import Button from '../common/Button/Button';
 import HighlightText from '../common/HighlightText/HighlightText';
@@ -64,6 +64,9 @@ export default function Intro(){
     position: absolute;
     right: 130px;
     top: 218px;
+    @media only screen and (max-width: ${tablet}){
+      display: none;
+    }
   `;
 
   return (
