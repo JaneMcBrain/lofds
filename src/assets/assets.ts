@@ -18,7 +18,7 @@ export const navigation = {
   ],
   right: [
     {name: 'Label Sitter', anchor: 'labelsitter'},
-    {name: 'System.B', anchor: 'systemb'},
+    {name: 'System.B', anchor: 'system.b'},
     {name: 'Saxophon Retrait', anchor: 'saxophonretreat'},
   ]
 };

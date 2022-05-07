@@ -36,7 +36,7 @@ export default function Footer(){
         </FooterColumn>
         <FooterColumn>
           <h2 className="headline h2 mb-20">Folge uns</h2>
-          <Link text="Instagram" link="http://"></Link>
+          <Link text="Instagram" link="https://www.instagram.com/system.b.berlin/"></Link>
         </FooterColumn>
         <FooterColumn>
           <h2 className="headline h2 mb-20">Kontakt</h2>
