@@ -2,6 +2,8 @@
 import { useState } from 'react';
 import styled from 'styled-components';
 import { colorDark, colorLight, headerHeight, headerMobileHeight, navigation, tablet } from '../assets/assets';
+import logo from '../assets/images/lofds-logo.svg'
+import FooterContent from './content/FooterContent';
 
 export default function Header(){
   const [iconClass, setIconClass] = useState<string>('');
@@ -97,6 +99,7 @@ export default function Header(){
     padding-top: 80px;
     padding-right: 30px;
     padding-left: 30px;
+    overflow: scroll
   `;
 
   const MobileLink = styled.a`
@@ -112,10 +115,14 @@ export default function Header(){
     setShowMobileNav(!showMobileNav);
   }
 
+  const scrollToTop = () => {
+    window.scroll({top: 0})
+  }
+
   return (
     <HeaderTag className="fixed top0 right0 left0">
       {navigation.left.map( item => <Link key={item.name} href={'#' + item.anchor} left>{item.name}</Link>)}
-      <Image src="https://static.wixstatic.com/media/d1bfd1_395f2a29389245deb2ad542d2fde779f~mv2.jpg/v1/fill/w_895,h_295,al_c,lg_1,q_80/Lofds%20Logog.webp"></Image>
+      <Image src={logo} className="pointer" onClick={scrollToTop}></Image>
       {navigation.right.map( item => <Link key={item.name} href={'#' + item.anchor} right>{item.name}</Link>)}
       <Icon className={iconClass} onClick={onIconClick}></Icon>
       {showMobileNav &&
@@ -127,6 +134,7 @@ export default function Header(){
               className="headline h2"
               onClick={onIconClick}>{item.name}</MobileLink>)
           }
+          <FooterContent classes='mt-80'/>
         </MobileNav>
       }
     </HeaderTag>

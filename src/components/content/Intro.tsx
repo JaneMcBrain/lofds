@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import { intro, phone, tablet } from '../../assets/assets';
+import { intro, phone } from '../../assets/assets';
 import image from '../../assets/images/intro-comic.jpg'
 import Button from '../common/Button/Button';
+import GetInspired from '../common/GetInspired';
 import HighlightText from '../common/HighlightText/HighlightText';
-import inspiredImg from '../../assets/images/get-inspired-white.svg';
 
 export default function Intro(){
   const imageWidth = '42vw';
@@ -60,15 +60,6 @@ export default function Intro(){
     }
   `;
 
-  const Icon = styled.img`
-    position: absolute;
-    right: 130px;
-    top: 218px;
-    @media only screen and (max-width: ${tablet}){
-      display: none;
-    }
-  `;
-
   return (
     <Container className="flex dir-column align-center dark-bg">
       <ImgDiv className="relative">
@@ -79,7 +70,7 @@ export default function Intro(){
       </ImgDiv>
       <Text className="mb-50 text-light">{intro.text}</Text>
       <Button text={intro.button.text} link={intro.button.link}></Button>
-      <Icon src={inspiredImg} alt="Get inspired!"></Icon>
+      <GetInspired color="white" startFrom={0} scrollTo={1000} />
     </Container>
   );
 }

@@ -8,6 +8,7 @@ import ahadesign from '../../../assets/images/aha-design-element.jpg'
 import tausendsassa from '../../../assets/images/tausendsassa-element.jpg'
 import labelsitter from '../../../assets/images/labelsitter-element.jpg'
 import saxophonretreat from '../../../assets/images/saxophonretreat-element.jpg'
+import GetInspired from '../../common/GetInspired';
 
 export default function Elements(){
   const isEven = (index) => (index + 1) % 2 === 0;
@@ -15,7 +16,8 @@ export default function Elements(){
   const convertId = (text: string) => text.toLowerCase().replace(' ', '').replace('-', '');
 
   return (
-    <div className="elements flex dir-column">
+    <div className="elements flex dir-column relative">
+      <GetInspired color="blue" startFrom={1050} scrollTo={4800} />
       {elements.map((el, index) =>
         <div key={el.title} id={convertId(el.title)} 
           className={isEven(index) ? 'elements__item elements__item--reverse' : 'elements__item'}>
