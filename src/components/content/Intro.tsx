@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { intro, phone } from '../../assets/assets';
 import image from '../../assets/images/intro-comic.jpg'
 import Button from '../common/Button/Button';
-import GetInspired from '../common/GetInspired';
+import GetInspired from '../common/GetInspired/index';
 import HighlightText from '../common/HighlightText/HighlightText';
 
 export default function Intro(){
@@ -27,7 +27,7 @@ export default function Intro(){
 
   const Image = styled.img`
     width: ${imageWidth};
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 
     @media only screen and (max-width: ${phone}){
       width: 100%;
@@ -53,8 +53,10 @@ export default function Intro(){
     padding-left: 15vw;
     column-count: 2;
     column-gap: 7vw;
+    margin-bottom: 50px;
 
     @media only screen and (max-width: ${phone}){
+      margin-bottom: 76px;
       column-count: 1;
       padding: 0px;
     }
@@ -68,9 +70,9 @@ export default function Intro(){
           {intro.title.map(word => <HighlightText key={word} highlight="gradient-bg" text={word}></HighlightText>)}
         </Title>
       </ImgDiv>
-      <Text className="mb-50 text-light">{intro.text}</Text>
+      <Text className="text-light">{intro.text}</Text>
       <Button text={intro.button.text} link={intro.button.link}></Button>
-      <GetInspired color="white" startFrom={0} scrollTo={1000} />
+      <GetInspired color="white" startFrom={0} scrollTo={1082} />
     </Container>
   );
 }

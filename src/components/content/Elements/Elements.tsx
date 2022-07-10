@@ -9,7 +9,7 @@ import tausendsassa from '../../../assets/images/tausendsassa-element.jpg'
 import labelsitter from '../../../assets/images/labelsitter-element.jpg'
 import saxophonretreat from '../../../assets/images/saxophonretreat-element.jpg'
 import handtuchverleih from '../../../assets/images/hundtuchverleih-element.jpg'
-import GetInspired from '../../common/GetInspired';
+import GetInspired from '../../common/GetInspired/index';
 
 export default function Elements(){
   const isEven = (index) => (index + 1) % 2 === 0;
@@ -18,7 +18,7 @@ export default function Elements(){
 
   return (
     <div className="elements flex dir-column relative">
-      <GetInspired color="blue" startFrom={1050} scrollTo={4800} />
+      <GetInspired color="blue" startFrom={1115} scrollTo={7000} />
       {elements.map((el, index) =>
         <div key={el.title} id={convertId(el.title)} 
           className={isEven(index) ? 'elements__item elements__item--reverse' : 'elements__item'}>
@@ -29,7 +29,11 @@ export default function Elements(){
               {el.title_2 && <HighlightText highlight='dark-bg' text={el.title_2}/>}
             </h2>
             <p className="elements__text">{el.text}</p>
-            {el.linkAnchor.length > 0 && <Link link={el.linkAnchor} text={el.linkText}></Link>}
+            {el.linkAnchor.length > 0 && 
+              <p className="elements__link">
+                <Link link={el.linkAnchor} text={el.linkText}></Link>
+              </p>
+            }
           </div>
         </div>
         )

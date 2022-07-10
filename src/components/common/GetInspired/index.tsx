@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import logoWhite from '../../assets/images/get-inspired-white.svg';
-import logoBlue from '../../assets/images/get-inspired-blue.svg';
-import useWindowScrollPosition from '../../utils/hooks';
-import { mailTo, tablet } from '../../assets/assets';
+import logoWhite from '../../../assets/images/get-inspired-white.svg';
+import logoBlue from '../../../assets/images/get-inspired-blue.svg';
+import useWindowScrollPosition from '../../../utils/hooks';
+import { mailTo, tablet } from '../../../assets/assets';
 
 interface ComponentProps{
   color: string;
@@ -19,7 +19,8 @@ function GetInspired({color, startFrom, scrollTo}: ComponentProps){
     right: 0px;
     top: ${isBlue() ? '50px' : '218px'};
     @media only screen and (max-width: ${tablet}){
-      display: none;
+      width: 154px;
+      top: ${isBlue() ? '25px' : '59px'};
     }
   `;
 
@@ -27,7 +28,7 @@ function GetInspired({color, startFrom, scrollTo}: ComponentProps){
     <a href={mailTo}>
       <Icon
         src={isBlue() ? logoBlue : logoWhite}
-        className={shouldScroll() ? 'fixed' : 'absolute'}
+        className={shouldScroll() ? 'fixed icon-fixed' : 'absolute icon-absolute'}
         alt="Get inspired!"></Icon>
     </a>
   )
