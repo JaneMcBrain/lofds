@@ -11,7 +11,9 @@ export default function Header(){
   const mobileLinks = navigation.left.concat(navigation.right);
 
   const Link = styled.a`
-  ${props => (props.left ? 'margin-right' : 'margin-left')}: 3vw;
+  :not(:last-of-type){
+    margin-right: 3vw;
+  }
 
   @media only screen and (max-width: ${tablet}){
     display: none;
@@ -37,6 +39,7 @@ export default function Header(){
 
   const Image = styled.img`
     max-width: 200px;
+    margin-right: 3vw;
 
     @media only screen and (max-width: ${tablet}){
       max-width: 145px;
@@ -121,8 +124,8 @@ export default function Header(){
 
   return (
     <HeaderTag className="fixed top0 right0 left0">
-      {navigation.left.map( item => <Link key={item.name} href={'#' + item.anchor} left>{item.name}</Link>)}
       <Image src={logo} className="pointer" onClick={scrollToTop}></Image>
+      {navigation.left.map( item => <Link key={item.name} href={'#' + item.anchor} left>{item.name}</Link>)}
       {navigation.right.map( item => <Link key={item.name} href={'#' + item.anchor} right>{item.name}</Link>)}
       <Icon className={iconClass} onClick={onIconClick}></Icon>
       {showMobileNav &&

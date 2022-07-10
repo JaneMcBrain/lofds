@@ -20,6 +20,7 @@ export const navigation = {
     {name: 'Label Sitter', anchor: 'labelsitter'},
     {name: 'System.B', anchor: 'system.b'},
     {name: 'Saxophon Retreat', anchor: 'saxophonretreat'},
+    {name: 'Handtuchverleih', anchor: 'handtuchverleih'},
   ]
 };
 
@@ -27,7 +28,7 @@ export const mailTo = 'mailto:aline@lofds.de';
 
 export const intro = {
   title: ['Lustige', 'Organisation', 'für dolle Sachen'],
-  text: 'LOFDS vereint Organisation, Kreativität und Schönheit. Es ist ein Team in dem innovative Ideen wachsen können. Unsere Business Center unterstützen sich gegenseitig, Expertise wird geteilt und dem Schaffensgeist sind somit keine Grenzen gesetzt. Ob Eventplanung, Design, Mode oder Musik LOFDS zeichnet sich durch seine Vielfältigkeit aus und wird dadurch einzigartig. Obwohl Ideen meist klein beginnen, kann durch den Zusammenschluss unserer Business Center bereits der Funke zu etwas Großem werden. Spaß, Kreativität und Begeisterung zeichnen unsere Arbeit aus, eben eine lustige Organisation für dolle Sachen.',
+  text: 'L.O.F.D.S. ein Familienunternehmen welches Organisation, Kreativität und Schönheit vereint. In unserem Team können innovative Ideen wachsen und unsere Business Center unterstützen sich gegenseitig, Expertise wird geteilt und dem Schaffensgeist sind keine Grenzen gesetzt. Ob Eventplanung, Design, Mode, Musik oder Equipmentverleih LOFDS zeichnet sich durch seine Vielfältigkeit aus und wird dadurch einzigartig. Obwohl Ideen meist klein beginnen, kann durch den Zusammenschluss unserer Business Center bereits ein Funke zu etwas Großem werden. Spaß, Kreativität und Begeisterung zeichnen unsere Arbeit aus, eben eine lustige Organisation für dolle Sachen.',
   button: {text: 'Schreib uns', link: mailTo}
 };
 
