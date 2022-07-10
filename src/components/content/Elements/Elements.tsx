@@ -8,11 +8,12 @@ import ahadesign from '../../../assets/images/aha-design-element.jpg'
 import tausendsassa from '../../../assets/images/tausendsassa-element.jpg'
 import labelsitter from '../../../assets/images/labelsitter-element.jpg'
 import saxophonretreat from '../../../assets/images/saxophonretreat-element.jpg'
+import handtuchverleih from '../../../assets/images/hundtuchverleih-element.jpg'
 import GetInspired from '../../common/GetInspired';
 
 export default function Elements(){
   const isEven = (index) => (index + 1) % 2 === 0;
-  const images = [tausendsassa, labelsitter, systemb, dinosound, ahadesign, saxophonretreat];
+  const images = [tausendsassa, labelsitter, systemb, dinosound, ahadesign, saxophonretreat, handtuchverleih];
   const convertId = (text: string) => text.toLowerCase().replace(' ', '').replace('-', '');
 
   return (
