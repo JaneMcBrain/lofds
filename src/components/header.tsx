@@ -129,7 +129,7 @@ export default function Header(){
       {navigation.right.map( item => <Link key={item.name} href={'#' + item.anchor} right>{item.name}</Link>)}
       <Icon className={iconClass} onClick={onIconClick}></Icon>
       {showMobileNav &&
-        <MobileNav className="gradient-bg">
+        <MobileNav className="gradient-bg-2">
           {mobileLinks.map(item =>
             <MobileLink 
               key={item.name}
